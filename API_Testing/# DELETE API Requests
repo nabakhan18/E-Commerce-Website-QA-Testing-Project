@@ -1,1 +1,132 @@
 
+# DELETE API Requests
+
+## Overview
+
+This document provides examples of **DELETE API requests** for manual API testing. These requests demonstrate how resources such as users, products, and reviews can be deleted through an API.
+
+Each example includes the HTTP method, endpoint, required headers, expected response status, response body, and relevant validation scenarios.
+
+## Table of Contents
+
+1. [Delete User by ID](#1-delete-user-by-id)
+2. [Delete Product by ID](#2-delete-product-by-id)
+3. [Delete Review by ID](#3-delete-review-by-id)
+
+---
+
+## 1. Delete User by ID
+
+**Method:** `DELETE`
+
+**URL:**
+
+```text
+https://api.example.com/users/{user_id}
+```
+
+**Headers:**
+
+```text
+Authorization: Bearer <valid_token>
+```
+
+### Expected Response
+
+**HTTP Status:** `204 No Content`
+
+**Response Body:** Empty
+
+A `204 No Content` response indicates that the user was successfully deleted and there is no response body to return.
+
+### Notes
+
+* If the specified user does not exist, the API should return `404 Not Found`.
+* If the authorization token is missing or invalid, the API should return `401 Unauthorized`.
+* A valid authentication token is required to perform the deletion.
+
+---
+
+## 2. Delete Product by ID
+
+**Method:** `DELETE`
+
+**URL:**
+
+```text
+https://api.example.com/products/{product_id}
+```
+
+**Headers:**
+
+```text
+Authorization: Bearer <valid_token>
+```
+
+### Expected Response
+
+**HTTP Status:** `200 OK`
+
+**Response Body:**
+
+```json
+{
+  "message": "Product deleted successfully",
+  "deleted_product_id": "123456"
+}
+```
+
+### Notes
+
+* If the specified product does not exist, the API should return `404 Not Found`.
+* If the authorization token is missing or invalid, the API should return `401 Unauthorized`.
+* If the product is associated with an active order and deletion is not permitted, the API may return `409 Conflict`.
+
+---
+
+## 3. Delete Review by ID
+
+**Method:** `DELETE`
+
+**URL:**
+
+```text
+https://api.example.com/reviews/{review_id}
+```
+
+**Headers:**
+
+```text
+Authorization: Bearer <valid_token>
+```
+
+### Expected Response
+
+**HTTP Status:** `200 OK`
+
+**Response Body:**
+
+```json
+{
+  "message": "Review deleted successfully",
+  "deleted_review_id": "r001"
+}
+```
+
+### Notes
+
+* If the specified review does not exist, the API should return `404 Not Found`.
+* If the authorization token is missing or invalid, the API should return `401 Unauthorized`.
+* If the review is under dispute or deletion is restricted, the API may return `403 Forbidden`.
+
+---
+
+## Summary
+
+| Resource | Method   | Success Status   | Common Error Statuses |
+| -------- | -------- | ---------------- | --------------------- |
+| User     | `DELETE` | `204 No Content` | `401`, `404`          |
+| Product  | `DELETE` | `200 OK`         | `401`, `404`, `409`   |
+| Review   | `DELETE` | `200 OK`         | `401`, `403`, `404`   |
+
+These examples can be used as a reference when performing **manual DELETE request testing** in tools such as Postman or similar API testing clients.

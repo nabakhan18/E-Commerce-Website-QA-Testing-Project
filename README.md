@@ -56,7 +56,7 @@ Hi there! 👋 I'm **Naba Zahid Khan**, a beginner/entry-level **Manual QA Stude
 | 📋 Bug Reports    | [Bug_Reports/](Bug_Reports/)       | Bug reports with steps to reproduce and screenshots               |
 | 🗂️ Test Plans     | [Test_Plans/](Test_Plans/)         | Basic plans outlining what and how I tested                       |
 | ✅ Checklists     | [Checklists/](Checklists/)         | Quick checklists for common testing scenarios                     |
-| 🔌 API Testing    | [API_Testing/](API_Testing/)       | Postman collections and sample API tests                          |
+| 🔌 API Testing    | [API_Testing/](API_Testing)       | Postman collections and sample API tests                          |
 | 💾 SQL Queries    | [SQL_Queries/](SQL_Queries/)       | Simple queries used for data validation                           |
 | 📊 Test Reports   | [Test_Reports/](Test_Reports/)     | Summaries of what I tested and found                               |
 

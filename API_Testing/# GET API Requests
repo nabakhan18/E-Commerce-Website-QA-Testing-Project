@@ -1,1 +1,146 @@
+# GET API Requests
+
+## Overview
+
+This document provides examples of **GET API requests** for manual API testing. These requests are used to retrieve resources such as users, products, and reviews from an API.
+
+Each example includes the HTTP method, endpoint, required headers, expected response status, response body, and relevant validation scenarios.
+
+## Table of Contents
+
+1. [Get User by ID](#1-get-user-by-id)
+2. [Get Product by ID](#2-get-product-by-id)
+3. [Get Review by ID](#3-get-review-by-id)
+
+---
+
+## 1. Get User by ID
+
+**Method:** `GET`
+
+**URL:**
+
+```text
+https://api.example.com/users/{user_id}
+```
+
+**Headers:**
+
+```text
+Authorization: Bearer <valid_token>
+```
+
+### Expected Response
+
+**HTTP Status:** `200 OK`
+
+**Response Body:**
+
+```json
+{
+  "id": "12345",
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+```
+
+### Notes
+
+* If the specified user exists, the API should return `200 OK`.
+* If the user does not exist, the API should return `404 Not Found`.
+* If the authorization token is missing or invalid, the API should return `401 Unauthorized`.
+* The response should contain the requested user's information.
+
+---
+
+## 2. Get Product by ID
+
+**Method:** `GET`
+
+**URL:**
+
+```text
+https://api.example.com/products/{product_id}
+```
+
+**Headers:**
+
+```text
+Authorization: Bearer <valid_token>
+```
+
+### Expected Response
+
+**HTTP Status:** `200 OK`
+
+**Response Body:**
+
+```json
+{
+  "id": "123456",
+  "name": "Wireless Headphones",
+  "price": 49.99,
+  "category": "Electronics"
+}
+```
+
+### Notes
+
+* If the specified product exists, the API should return `200 OK`.
+* If the product does not exist, the API should return `404 Not Found`.
+* If the authorization token is missing or invalid, the API should return `401 Unauthorized`.
+* The response should contain the requested product details.
+
+---
+
+## 3. Get Review by ID
+
+**Method:** `GET`
+
+**URL:**
+
+```text
+https://api.example.com/reviews/{review_id}
+```
+
+**Headers:**
+
+```text
+Authorization: Bearer <valid_token>
+```
+
+### Expected Response
+
+**HTTP Status:** `200 OK`
+
+**Response Body:**
+
+```json
+{
+  "id": "r001",
+  "user_id": "12345",
+  "product_id": "123456",
+  "rating": 5,
+  "comment": "Excellent product!"
+}
+```
+
+### Notes
+
+* If the specified review exists, the API should return `200 OK`.
+* If the review does not exist, the API should return `404 Not Found`.
+* If the authorization token is missing or invalid, the API should return `401 Unauthorized`.
+* The response should contain the requested review details.
+
+---
+
+## Summary
+
+| Resource | Method | Success Status | Common Error Statuses |
+| -------- | ------ | -------------- | --------------------- |
+| User     | `GET`  | `200 OK`       | `401`, `404`          |
+| Product  | `GET`  | `200 OK`       | `401`, `404`          |
+| Review   | `GET`  | `200 OK`       | `401`, `404`          |
+
+These examples can be used as a reference for performing **manual GET request testing** using Postman or other API testing tools.
 

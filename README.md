@@ -1,6 +1,6 @@
-# 🕵️‍♂️ [Your Name] – Aspiring QA Engineer Portfolio
+# 🕵️‍♂️ Naba Zahid Khan – Aspiring QA Student Portfolio
 
-Hi there! 👋 I'm **[Your Name]**, a beginner/entry-level **Manual QA Engineer** currently building my skills in software testing. This repository is my learning portfolio, where I practice and showcase test cases, bug reports, and QA documents as I grow in this field.
+Hi there! 👋 I'm **Naba Zahid Khan**, a beginner/entry-level **Manual QA Student** currently building my skills in software testing. This repository is my learning portfolio, where I practice and showcase test cases, bug reports, and QA documents as I grow in this field.
 
 🔒 *All content here is for practice/learning purposes and does not belong to any real company or client.*
 
@@ -8,7 +8,7 @@ Hi there! 👋 I'm **[Your Name]**, a beginner/entry-level **Manual QA Engineer*
 
 ## 👤 About Me
 
-💼 **Aspiring QA Engineer / QA Student**
+💼 ** QA Student**
 🎯 Learning the fundamentals of software testing — from writing test cases to reporting bugs clearly and following a structured QA process.
 
 🧠 What I'm currently learning and practicing:
@@ -18,15 +18,6 @@ Hi there! 👋 I'm **[Your Name]**, a beginner/entry-level **Manual QA Engineer*
 - Understanding the Software Testing Life Cycle (STLC)
 - Getting familiar with Agile/Scrum basics
 
-🔍 I'm passionate about attention to detail and want to build a career helping teams ship reliable, bug-free software.
-
-- 📧 **Email:** your.email@example.com
-- 🔗 **LinkedIn:** [Your LinkedIn Profile](#)
-- 📄 **Resume:** [Add link to your resume here](#)
-- 📍 **Location:** Your City, Country
-- 🌐 **Languages:** English, [Add other languages you know]
-
----
 
 ## 🧰 Skills & Tools (Beginner Level)
 
@@ -71,20 +62,6 @@ Hi there! 👋 I'm **[Your Name]**, a beginner/entry-level **Manual QA Engineer*
 
 > This is a learning portfolio, made to show my progress and understanding of QA concepts.
 
----
-
-## 🎓 Courses & Certifications (In Progress)
-
-💬 *"Currently learning and collecting certifications as I go."*
-
-- **[Add course name]** – e.g. Software Testing Fundamentals
-- **[Add course name]** – e.g. Manual Testing Basics
-- **[Add course name]** – e.g. Introduction to API Testing with Postman
-- **[Add course name]** – e.g. SQL for Beginners
-
-> 💡 *Tip: Add certificates only after you finish them. Even 2-3 real ones look more credible than a long unfinished list.*
-
----
 
 ## 🧾 License
 

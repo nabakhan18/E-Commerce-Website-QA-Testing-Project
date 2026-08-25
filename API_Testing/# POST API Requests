@@ -1,1 +1,190 @@
 
+# POST API Requests
+
+## Overview
+
+This document provides examples of **POST API requests** for manual API testing. These requests are used to create new resources such as users, products, and reviews.
+
+Each example includes the HTTP method, endpoint, required headers, request body, expected response status, response body, and relevant validation scenarios.
+
+## Table of Contents
+
+1. [Create User](#1-create-user)
+2. [Create Product](#2-create-product)
+3. [Create Review](#3-create-review)
+
+---
+
+## 1. Create User
+
+**Method:** `POST`
+
+**URL:**
+
+```text id="2f4y0c"
+https://api.example.com/users
+```
+
+**Headers:**
+
+```text id="k3g0fz"
+Content-Type: application/json
+Authorization: Bearer <valid_token>
+```
+
+### Request Body
+
+```json id="z8k1xq"
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "SecurePassword123"
+}
+```
+
+### Expected Response
+
+**HTTP Status:** `201 Created`
+
+**Response Body:**
+
+```json id="v7h2ma"
+{
+  "message": "User created successfully",
+  "user": {
+    "id": "12345",
+    "name": "John Doe",
+    "email": "john@example.com"
+  }
+}
+```
+
+### Notes
+
+* If all required information is valid, the API should return `201 Created`.
+* If required fields are missing or invalid, the API should return `400 Bad Request`.
+* If the email address already exists, the API may return `409 Conflict`.
+* If the authorization token is missing or invalid, the API should return `401 Unauthorized`.
+
+---
+
+## 2. Create Product
+
+**Method:** `POST`
+
+**URL:**
+
+```text id="q9l6re"
+https://api.example.com/products
+```
+
+**Headers:**
+
+```text id="8x2n1p"
+Content-Type: application/json
+Authorization: Bearer <valid_token>
+```
+
+### Request Body
+
+```json id="m5c8va"
+{
+  "name": "Wireless Headphones",
+  "price": 49.99,
+  "category": "Electronics"
+}
+```
+
+### Expected Response
+
+**HTTP Status:** `201 Created`
+
+**Response Body:**
+
+```json id="f4t6ks"
+{
+  "message": "Product created successfully",
+  "product": {
+    "id": "123456",
+    "name": "Wireless Headphones",
+    "price": 49.99,
+    "category": "Electronics"
+  }
+}
+```
+
+### Notes
+
+* If the product information is valid, the API should return `201 Created`.
+* If required fields are missing or invalid, the API should return `400 Bad Request`.
+* If the product already exists and duplicates are not allowed, the API may return `409 Conflict`.
+* If the authorization token is missing or invalid, the API should return `401 Unauthorized`.
+
+---
+
+## 3. Create Review
+
+**Method:** `POST`
+
+**URL:**
+
+```text id="c2r8yp"
+https://api.example.com/reviews
+```
+
+**Headers:**
+
+```text id="j6w3nd"
+Content-Type: application/json
+Authorization: Bearer <valid_token>
+```
+
+### Request Body
+
+```json id="u1k9zs"
+{
+  "user_id": "12345",
+  "product_id": "123456",
+  "rating": 5,
+  "comment": "Excellent product!"
+}
+```
+
+### Expected Response
+
+**HTTP Status:** `201 Created`
+
+**Response Body:**
+
+```json id="r5m2hx"
+{
+  "message": "Review created successfully",
+  "review": {
+    "id": "r001",
+    "user_id": "12345",
+    "product_id": "123456",
+    "rating": 5,
+    "comment": "Excellent product!"
+  }
+}
+```
+
+### Notes
+
+* If all required information is valid, the API should return `201 Created`.
+* If required fields are missing or invalid, the API should return `400 Bad Request`.
+* If the specified user or product does not exist, the API may return `404 Not Found`.
+* If the user is not permitted to create the review, the API may return `403 Forbidden`.
+* If the authorization token is missing or invalid, the API should return `401 Unauthorized`.
+
+---
+
+## Summary
+
+| Resource | Method | Success Status | Common Error Statuses      |
+| -------- | ------ | -------------- | -------------------------- |
+| User     | `POST` | `201 Created`  | `400`, `401`, `409`        |
+| Product  | `POST` | `201 Created`  | `400`, `401`, `409`        |
+| Review   | `POST` | `201 Created`  | `400`, `401`, `403`, `404` |
+
+These examples can be used as a reference for performing **manual POST request testing** using Postman or other API testing tools.

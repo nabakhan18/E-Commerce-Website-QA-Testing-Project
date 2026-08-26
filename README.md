@@ -46,6 +46,213 @@ The following modules were tested:
 ---
 
 ## Repository Structure
+Test Cases
+
+Test cases were created for different E-Commerce modules.
+
+Each test case contains:
+
+Test Case ID
+Test Scenario
+Preconditions
+Test Steps
+Test Data
+Expected Result
+Actual Result
+Status
+Priority
+
+Main areas covered:
+
+Login
+Registration
+Products
+Search
+Cart
+Checkout
+Navigation
+Bug Reports
+
+Bugs identified during testing are documented with:
+
+Bug ID
+Bug Title
+Description
+Steps to Reproduce
+Expected Result
+Actual Result
+Severity
+Priority
+Environment
+Status
+Screenshot/Evidence
+Test Plans
+
+Test plans define:
+
+Testing objectives
+Testing scope
+Features to be tested
+Features not to be tested
+Testing approach
+Test environment
+Risks
+Entry and exit criteria
+Test Scenarios
+
+Test scenarios were created to identify the different situations
+that need to be tested in the application.
+
+Examples:
+
+Verify user can register
+Verify user can login
+Verify products are displayed
+Verify product search works
+Verify product can be added to cart
+Verify cart quantity can be updated
+Verify user can proceed to checkout
+Verify order can be placed
+Checklists
+
+Checklists are used for quick validation of application features.
+
+The checklists cover:
+
+Login
+Registration
+Products
+Search
+Cart
+Checkout
+UI
+Regression
+API Testing
+
+API testing was practiced using Postman.
+
+The following API methods were covered:
+
+GET
+POST
+PUT
+PATCH
+DELETE
+
+API validation includes:
+
+Status codes
+Response body
+JSON response
+Required fields
+Response structure
+Error handling
+Response time
+
+Postman collections are included in the API Testing folder.
+
+SQL Testing
+
+SQL testing was used for basic database validation.
+
+The following areas were checked:
+
+User data
+Product data
+Product price
+Product stock
+Cart data
+Cart quantity
+Order data
+Order total
+Duplicate records
+NULL values
+
+SQL queries include:
+
+SELECT
+WHERE
+ORDER BY
+COUNT
+GROUP BY
+HAVING
+JOIN
+Test Reports
+
+Test reports summarize the results of test execution.
+
+Reports include:
+
+Total test cases
+Passed test cases
+Failed test cases
+Blocked test cases
+Not executed test cases
+Defect summary
+Testing status
+Recommendations
+
+Regression testing reports are also included.
+
+Screenshots
+
+Screenshots are included as testing evidence.
+
+They contain examples of:
+
+E-Commerce application
+Test case execution
+Bug reports
+Postman API testing
+SQL queries and results
+Tools Used
+GitHub
+Microsoft Excel
+Postman
+SQL
+Jira
+Figma
+Chrome DevTools
+Testing Workflow
+
+The testing process followed this basic workflow:
+
+Requirements
+→ Test Scenarios
+→ Test Cases
+→ Test Execution
+→ Bug Reporting
+→ Retesting
+→ Regression Testing
+→ Test Report
+
+Test Environment
+Operating System: Windows
+Browser: Google Chrome
+Testing Type: Manual Testing
+API Tool: Postman
+Database: SQL
+Learning Outcomes
+
+Through this project, I practiced:
+
+Writing test cases
+Creating test scenarios
+Preparing test plans
+Creating testing checklists
+Identifying and reporting bugs
+Assigning severity and priority
+Retesting defects
+Performing regression testing
+Testing APIs using Postman
+Validating database data using SQL
+Preparing test execution reports
+Documenting QA activities
+Disclaimer
+
+This is a practice/portfolio project created for educational and
+demonstration purposes. The test data and examples are not related
+to confidential production systems.
 
 ```text
 QA-E-Commerce-Portfolio/
@@ -89,3 +296,6 @@ QA-E-Commerce-Portfolio/
 │   └── Regression-Test-Report.md
 │
 └── README.md
+
+
+

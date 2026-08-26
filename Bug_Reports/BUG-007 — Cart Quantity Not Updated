@@ -1,0 +1,31 @@
+# BUG-007 — Cart Total Does Not Update After Quantity Change
+
+## Bug Type
+Functional / Calculation Bug
+
+## Module
+Shopping Cart
+
+## Severity
+High
+
+## Priority
+High
+
+## Steps to Reproduce
+1. Add a product to the cart.
+2. Open Cart.
+3. Increase product quantity from 1 to 2.
+4. Check the total price.
+
+## Expected Result
+Quantity should become 2 and the total price should be recalculated correctly.
+
+## Actual Result
+Quantity changes but the total price does not update correctly.
+
+## Status
+Open
+
+## Test Case
+TC-CART-003

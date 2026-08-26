@@ -88,11 +88,4 @@ QA-E-Commerce-Portfolio/
 │   ├── E-Commerce-Test-Summary-Report.md
 │   └── Regression-Test-Report.md
 │
-├── 09-Screenshots/
-│   ├── Application/
-│   ├── Test-Cases/
-│   ├── Bug-Reports/
-│   ├── Postman/
-│   └── SQL/
-│
 └── README.md

@@ -1,0 +1,30 @@
+# BUG-008 — Remove Button Does Not Remove Product
+
+## Bug Type
+Functional Bug
+
+## Module
+Shopping Cart
+
+## Severity
+High
+
+## Priority
+High
+
+## Steps to Reproduce
+1. Add a product to the cart.
+2. Open Cart.
+3. Click Remove.
+
+## Expected Result
+The selected product should be removed from the cart.
+
+## Actual Result
+The product remains visible in the cart after clicking Remove.
+
+## Status
+Open
+
+## Test Case
+TC-CART-002

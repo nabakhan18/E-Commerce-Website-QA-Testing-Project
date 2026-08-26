@@ -1,0 +1,31 @@
+# BUG-006 — Product Not Added to Cart
+
+## Bug Type
+Functional Bug
+
+## Module
+Product / Cart
+
+## Severity
+High
+
+## Priority
+High
+
+## Steps to Reproduce
+1. Open the Products page.
+2. Select any available product.
+3. Click Add to Cart.
+4. Open Cart.
+
+## Expected Result
+The selected product should appear in the cart.
+
+## Actual Result
+The product does not appear in the cart after clicking Add to Cart.
+
+## Status
+Open
+
+## Test Case
+TC-PROD-003 / TC-CART-001

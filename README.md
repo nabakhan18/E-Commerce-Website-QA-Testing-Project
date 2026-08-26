@@ -1,74 +1,98 @@
-# 🕵️‍♂️ Naba Zahid Khan – Aspiring QA Student Portfolio
+# E-Commerce Website - QA Testing Portfolio
 
-Hi there! 👋 I'm **Naba Zahid Khan**, a beginner/entry-level **Manual QA Student** currently building my skills in software testing. This repository is my learning portfolio, where I practice and showcase test cases, bug reports, and QA documents as I grow in this field.
+## About the Project
 
-🔒 *All content here is for practice/learning purposes and does not belong to any real company or client.*
+This repository contains my QA testing work for an E-Commerce website.
 
----
+The purpose of this project is to practice and demonstrate software
+testing skills, including manual testing, test case writing, bug
+reporting, API testing, SQL testing, regression testing, and test
+reporting.
 
-## 👤 About Me
-
-💼 ** QA Student**
-🎯 Learning the fundamentals of software testing — from writing test cases to reporting bugs clearly and following a structured QA process.
-
-🧠 What I'm currently learning and practicing:
-- Basics of manual testing (functional, smoke, regression, exploratory)
-- Writing clear and simple test cases
-- Reporting bugs step-by-step so developers can easily understand and reproduce them
-- Understanding the Software Testing Life Cycle (STLC)
-- Getting familiar with Agile/Scrum basics
-
-
-## 🧰 Skills & Tools (Beginner Level)
-
-- **Testing Types:** Manual Testing, Functional Testing, Smoke Testing, Regression Testing (basics)
-- **Bug Tracking:** Jira / Trello (learning)
-- **Test Management:** TestRail / Excel-based test cases
-- **API Testing:** Postman (basics)
-- **Basic SQL:** SELECT, WHERE, JOIN queries for data validation
-- **Other Tools:** Browser DevTools, basic accessibility checks
-
-> 💡 *Tip: List only tools you have actually practiced with, even a little. Beginners don't need a long list — a few tools you understand well look better than many you've only heard of.*
+This is a practice/portfolio project created for learning and
+demonstration purposes.
 
 ---
 
-## 📁 Repository Structure
+## Project Scope
 
-```
-📂 QA-Portfolio/
+The following modules were tested:
+
+- User Registration
+- User Login
+- Product Listing
+- Product Details
+- Product Search
+- Shopping Cart
+- Checkout
+- Navigation
+- UI Validation
+
+---
+
+## Testing Types
+
+- Functional Testing
+- Smoke Testing
+- Regression Testing
+- Retesting
+- Exploratory Testing
+- Positive Testing
+- Negative Testing
+- UI Testing
+- API Testing
+- Database/SQL Testing
+
+---
+
+## Repository Structure
+
+```text
+QA-E-Commerce-Portfolio/
 │
-├ 🧪 Test_Cases       # Sample test cases I've written for practice apps/websites
-├ 📋 Bug_Reports      # Simple bug reports with steps to reproduce
-├ 🗂️ Test_Plans       # Basic test plan templates
-├ ✅ Checklists       # Simple checklists for UI/basic testing
-├ 🔌 API_Testing      # Postman collections I practiced with
-├ 💾 SQL_Queries      # Simple SQL queries for data checks
-├ 📊 Test_Reports     # Practice test summary reports
-```
-
----
-
-### 📁 Explore My Practice Work
-
-| 📦 Section       | 🔗 Link                            | 📝 Description                                                  |
-|------------------|------------------------------------|------------------------------------------------------------------|
-| 🧪 Test Cases     | [Test_Cases/](Test_Cases/)         | Simple test cases with steps and expected results                |
-| 📋 Bug Reports    | [Bug_Reports/](Bug_Reports/)       | Bug reports with steps to reproduce and screenshots               |
-| 🗂️ Test Plans     | [Test_Plans/](Test_Plans/)         | Basic plans outlining what and how I tested                       |
-| ✅ Checklists     | [Checklists/](Checklists/)         | Quick checklists for common testing scenarios                     |
-| 🔌 API Testing    | [API_Testing/](API_Testing)       | Postman collections and sample API tests                          |
-| 💾 SQL Queries    | [SQL_Queries/](SQL_Queries/)       | Simple queries used for data validation                           |
-| 📊 Test Reports   | [Test_Reports/](Test_Reports/)     | Summaries of what I tested and found                               |
-
-> This is a learning portfolio, made to show my progress and understanding of QA concepts.
-
-
-## 🧾 License
-
-This repository is shared under the [MIT License](LICENSE) for learning purposes.
-
----
-
-Thanks for checking out my portfolio! I'm always learning and open to feedback. 🙂
-
-QA out. 🚀
+├── 01-Test-Cases/
+│   ├── E-Commerce/
+│   └── Little-Lemon/
+│
+├── 02-Bug-Reports/
+│   ├── BUG-001.md
+│   ├── BUG-002.md
+│   └── BUG-003.md
+│
+├── 03-Test-Plans/
+│   ├── E-Commerce-Test-Plan.md
+│   └── Checkout-Test-Plan.md
+│
+├── 04-Test-Scenarios/
+│   └── E-Commerce-Test-Scenarios.md
+│
+├── 05-Checklists/
+│   ├── Login-Checklist.md
+│   ├── Product-Checklist.md
+│   ├── Cart-Checklist.md
+│   └── Checkout-Checklist.md
+│
+├── 06-API-Testing/
+│   ├── API-Test-Cases.md
+│   ├── API-Test-Scenarios.md
+│   ├── API-Test-Report.md
+│   └── Postman/
+│
+├── 07-SQL-Testing/
+│   ├── Basic-SQL-Queries.sql
+│   ├── E-Commerce-SQL-Test-Cases.md
+│   └── Database-Validation.md
+│
+├── 08-Test-Reports/
+│   ├── E-Commerce-Test-Execution-Report.md
+│   ├── E-Commerce-Test-Summary-Report.md
+│   └── Regression-Test-Report.md
+│
+├── 09-Screenshots/
+│   ├── Application/
+│   ├── Test-Cases/
+│   ├── Bug-Reports/
+│   ├── Postman/
+│   └── SQL/
+│
+└── README.md

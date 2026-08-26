@@ -1,0 +1,31 @@
+# BUG-009 — Checkout Allows Empty Required Fields
+
+## Bug Type
+Validation Bug
+
+## Module
+Checkout
+
+## Severity
+High
+
+## Priority
+High
+
+## Steps to Reproduce
+1. Add a product to the cart.
+2. Open Checkout.
+3. Leave required customer information empty.
+4. Click Place Order.
+
+## Expected Result
+The system should display validation messages and prevent order submission.
+
+## Actual Result
+The checkout process proceeds without properly validating required fields.
+
+## Status
+Open
+
+## Test Case
+TC-CHECKOUT-002

@@ -1,0 +1,31 @@
+# BUG-004 — Product Image Not Displayed
+
+## Bug Type
+UI Bug
+
+## Module
+Product Listing
+
+## Severity
+Low
+
+## Priority
+Medium
+
+## Steps to Reproduce
+1. Open the E-Commerce website.
+2. Navigate to Products.
+3. Scroll through the product list.
+4. Observe the product images.
+
+## Expected Result
+All product images should load correctly.
+
+## Actual Result
+One or more product images are not displayed correctly.
+
+## Status
+Open
+
+## Test Case
+TC-PROD-004

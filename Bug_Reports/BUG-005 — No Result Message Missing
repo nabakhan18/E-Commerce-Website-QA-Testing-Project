@@ -1,0 +1,31 @@
+# BUG-005 — Search Does Not Display No-Results Message
+
+## Bug Type
+Functional / UI
+
+## Module
+Search
+
+## Severity
+Medium
+
+## Priority
+Medium
+
+## Steps to Reproduce
+1. Open the E-Commerce website.
+2. Click the Search field.
+3. Enter a product name that does not exist.
+4. Click Search.
+
+## Expected Result
+A clear message such as "No products found" should be displayed.
+
+## Actual Result
+No clear feedback is provided to the user.
+
+## Status
+Open
+
+## Test Case
+TC-SEARCH-002
